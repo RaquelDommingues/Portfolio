@@ -1,0 +1,314 @@
+html, body { 
+    min-height: 100%; 
+}
+
+body {
+    background-image: url(/Portfolio/src/images/background.png);
+    background-size: cover;
+}
+
+.navbar .dropdown li a:hover {
+    background-color: #B9AFA7;
+    transition: ease-in 0.2s;
+}
+
+.projects-dropdown{
+    width: 100%;
+}
+
+li {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align:top;
+}
+
+
+#introText {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 2vw;
+}
+
+#name {
+    font-family: 'Satisfy', cursive;
+    font-size: 5vw;
+}
+
+#feature-projects {
+    font-family: 'Arima Madurai', cursive;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: #FFFFFF;
+    text-decoration: none;
+
+  }
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: aliceblue;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-in;
+  transform: scaleX(0);
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.hover-underline-animation:active::after {
+    transform: translateY(2px);
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.container {
+  background-color: #161c24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  position: fixed;
+  min-width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: -80px;
+}
+.box {
+    background-color: aliceblue;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 100px;
+    width: 60%;
+    box-shadow: rgba(22, 28, 36, 0.35) 0px 5px 15px;
+    border-radius: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.col-8, .col-2 {
+  height: 20px;
+}
+
+p {
+    text-align: center;
+    color: #161c24;
+}
+
+#logo {
+    display: block;
+    width: 65px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#me {
+    margin-top: 40px;
+    width: 60%;
+    height: 40%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.content {
+    border-right: 6px solid #161c24;
+    border-left: 6px solid #161c24;
+    text-align: center;
+}
+
+.container {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-family: 'Arima Madurai', cursive;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.card-text {
+    font-family: 'Arima Madurai', cursive;
+    font-size: 1vw;
+}
+
+.container .card {
+    position: relative;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.container .card .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #f00;
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.container .card:nth-child(1) .icon {
+    background: #e07768;
+}
+
+.container .card:nth-child(2) .icon {
+    background: #6eadd4;
+}
+
+.container .card .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+}
+
+i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+}
+
+.container .card .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.container .card .face.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+    background: #ff0057;
+    transform: translateY(0px);
+}
+
+.container .card .face.face1 .content {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.container .card .face.face1 .content i{
+    max-width: 100px;
+}
+
+.container .card .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #414141;
+}
+
+.container .card .face.face2 .content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    color: #414141;
+} 
+
+.container a {
+    text-decoration: none;
+    color: #414141;
+}
+
+
+.contac-btn {
+    height: auto;
+    width: auto;
+}
+
+span{
+    position: relative;
+    display: inline-flex;
+    width: 180px;
+    height: 55px;
+    margin: 0 15px;
+    perspective: 1000px;
+  }
+  span a{
+    font-size: 19px;
+    letter-spacing: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform .25s;
+    font-family: 'Arima Madurai', cursive;
+    
+  }
+  span a:before,
+  span a:after{
+    position: absolute;
+    content: "Contact me";
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #161c24;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  span a:before{
+    color: aliceblue;
+    background: #161c24;
+    transform: rotateY(0deg) translateZ(25px);
+  }
+  span a:after{
+    content: "💕Thank you";
+    color: #161c24;
+    background-color: aliceblue;
+    font-size: 19px;
+    font-weight: bold;
+    transform: rotateX(90deg) translateZ(25px);
+  }
+  span a:hover{
+    transform: translateZ(-25px) rotateX(-90deg);
+  }
+  
